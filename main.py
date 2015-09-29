@@ -24,10 +24,11 @@ with open('data.csv', 'rb') as attendance:
     	first_name = row[0].upper()
     	last_name = row[1].upper()
     	full_name = first_name + " " + last_name
+    	congrats = "HAS SUCCESSFULLY COMPLETED THE LHD"
 
     	# Set font and size
         nameFont = ImageFont.truetype('fonts/Outage.ttf', nameSize)
-        congrats = ImageFont.truetype('fonts/Lato.ttf', finishSize)
+        congratsFont = ImageFont.truetype('fonts/Lato.ttf', finishSize)
 
         draw = ImageDraw.Draw(im)
 
@@ -40,16 +41,16 @@ with open('data.csv', 'rb') as attendance:
             nameFont = ImageFont.truetype('fonts/Outage.ttf', nameSize)
             wnameFont, hnameFont = draw.textsize(nameFontName,font=nameFont)
 
-        wcongrats, hcongrats = draw.textsize(congratsDetails,font=congrats)
+        wcongratsFont, hcongratsFont = draw.textsize(congratsFontDetails,font=congratsFont)
 
-        while (wcongrats > maxFontW):
+        while (wcongratsFont > maxFontW):
             finishSize = finishSize - 10
-            congrats = ImageFont.truetype('fonts/OpenSansRegular.ttf', finishSize)
-            wcongrats, hcongrats = draw.textsize(congratsDetails,font=congrats)
+            congratsFont = ImageFont.truetype('fonts/OpenSansRegular.ttf', finishSize)
+            wcongratsFont, hcongratsFont = draw.textsize(congratsFontDetails,font=congratsFont)
 
         # Put text onto the image
         draw.text(((W-wnameFont)/2,(H-hnameFont)/2 + 100), nameFontName,font=nameFont, fill="white")
-        draw.text(((W-wcongrats)/2,((H-hcongrats)/2)+hnameFont+125), congratsDetails,font=congrats, fill="white")
+        draw.text(((W-wcongratsFont)/2,((H-hcongratsFont)/2)+hnameFont+125), congratsFontDetails,font=congratsFont, fill="white")
 
         # Save out the image
         filename = 'output/' + nameFontName.strip() + '.png'
