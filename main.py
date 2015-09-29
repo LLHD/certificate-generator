@@ -67,3 +67,6 @@ with open('data.csv', 'rb') as attendance:
         print filename
         im.save(filename,'PNG')
 
+        #DONE, YAY it Worked
+
+print "It Worked"
