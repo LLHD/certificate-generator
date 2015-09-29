@@ -1,22 +1,22 @@
-First Name,Last Name,Email address,Type of student,School/University,Graduation Year,Major/Degree,Mobile Number,Registered At
-Joey,Nasr,joeynasr19@hotmail.com,high_school,Pascal English School,2018,Chemistry,99084457,2015-09-26 20:23:37 UTC
-Charalambos,Demetriou,xaraldem@gmail.com,high_school,PASCAL English School Lemesos,2016,Student,97809911,2015-09-21 20:19:34 UTC
-Marcos,Savvides,the_fast@hotmail.co.uk,high_school,Pascal Greek School,2017,ICT,96891277,2015-09-15 18:57:02 UTC
-Christos ,Skordis ,skordischristos@gmail.com,high_school,Pascal English school limassol ,2016,Physics ,99336389,2015-09-15 16:10:59 UTC
-Panikos,Constantinou,kimbo20_cy@hotmail.com,high_school,Pascal Education,2017,ICT,99617556,2015-09-15 04:43:31 UTC
-Alex,Tucker,figtelite97@gmail.com,high_school,Pascal English School Limassol,2016,ICT,357 99459209,2015-09-14 17:04:56 UTC
-Loukas,Araouzos,loukasar@hotmail.com,high_school,Pascal English School,2017,Art,99255012,2015-09-14 14:03:57 UTC
-Nicolas,Gulas,nicolasgulas@gmail.com,high_school,Pascal English School,2017,Deez Nuts,96225161,2015-09-14 14:02:56 UTC
-Clairy,Antoniadou,clairy97gag@gmail.com,high_school,lanitio likio,2016,economics,99050534,2015-09-12 08:10:48 UTC
-Mikaella,Loizou,mikaella_loizou@hotmail.com,high_school,Pascal english school,2018,chemistry biology mathematics,96406085,2015-09-11 11:48:03 UTC
-Ghennadi,Patraman,General@julosdevelopment.com,high_school,Pascal English School,2017,ICT,97701143,2015-09-02 10:40:02 UTC
-Filip,Chorbadian,filipchorbadjian99@gmail.com,high_school,Pascal English School Limassol,2017,Physics,99862842,2015-09-02 10:20:50 UTC
-Alex,Christodoulou,PoisonedLloyed@gmail.com,high_school,Pascal English School,2017,ICT,97858167,2015-08-26 13:10:56 UTC
-Antonia,Vanezi,candy994@mail.com,high_school,Pascal English School,2017,General ,35799181515,2015-08-24 19:54:05 UTC
-Zinonas,Mina,zino_mina@cytanet.com.cy,high_school,Pascal English School Limassol,1999,School,35799089279,2015-08-24 19:49:33 UTC
-Stefanos,Costa,Stefanos.costa1999@gmail.com,high_school,Pascal English School,2017,ICT,97642652,2015-08-24 12:45:31 UTC
-Pavlina,kyriacou,palinoua@gmail.com,high_school,Lykeio Linopetras,2017,Ag. Athanasios,99951615,2015-08-23 10:26:39 UTC
-George,Mohseni,mrfoofoo7@gmail.com,high_school,Pascal English School,11,Art,95516615,2015-08-20 21:01:15 UTC
-Katerina,V'yurkova,kate79052009@rambler.ru,high_school,Pascal English School ,2017,Economics,35799269832,2015-08-20 19:54:25 UTC
-Chryso,efstathiou,chryso-ef@hotmail.com,high_school,pascal english school,2017,general,97726002,2015-08-19 10:05:18 UTC
-l,,,,,,,,
+First Name,Last Name,Type of student,School/University,Graduation Year,Major/Degree,Registered At
+Joey,Nasr,high_school,Pascal English School,2018,Chemistry,2015-09-26 20:23:37 UTC
+Charalambos,Demetriou,high_school,PASCAL English School Lemesos,2016,Student,2015-09-21 20:19:34 UTC
+Marcos,Savvides,high_school,Pascal Greek School,2017,ICT,2015-09-15 18:57:02 UTC
+Christos ,Skordis ,high_school,Pascal English school limassol ,2016,Physics ,2015-09-15 16:10:59 UTC
+Panikos,Constantinou,high_school,Pascal Education,2017,ICT,2015-09-15 04:43:31 UTC
+Alex,Tucker,high_school,Pascal English School Limassol,2016,ICT,2015-09-14 17:04:56 UTC
+Loukas,Araouzos,high_school,Pascal English School,2017,Art,2015-09-14 14:03:57 UTC
+Nicolas,Gulas,high_school,Pascal English School,2017,Deez Nuts,2015-09-14 14:02:56 UTC
+Clairy,Antoniadou,high_school,lanitio likio,2016,economics,2015-09-12 08:10:48 UTC
+Mikaella,Loizou,high_school,Pascal english school,2018,chemistry biology mathematics,2015-09-11 11:48:03 UTC
+Ghennadi,Patraman,high_school,Pascal English School,2017,ICT,2015-09-02 10:40:02 UTC
+Filip,Chorbadian,high_school,Pascal English School Limassol,2017,Physics,2015-09-02 10:20:50 UTC
+Alex,Christodoulou,high_school,Pascal English School,2017,ICT,2015-08-26 13:10:56 UTC
+Antonia,Vanezi,high_school,Pascal English School,2017,General ,2015-08-24 19:54:05 UTC
+Zinonas,Mina,high_school,Pascal English School Limassol,1999,School,2015-08-24 19:49:33 UTC
+Stefanos,Costa,high_school,Pascal English School,2017,ICT,2015-08-24 12:45:31 UTC
+Pavlina,kyriacou,high_school,Lykeio Linopetras,2017,Ag. Athanasios,2015-08-23 10:26:39 UTC
+George,Mohseni,high_school,Pascal English School,11,Art,2015-08-20 21:01:15 UTC
+Katerina,V'yurkova,high_school,Pascal English School ,2017,Economics,2015-08-20 19:54:25 UTC
+Chryso,efstathiou,high_school,pascal english school,2017,general,2015-08-19 10:05:18 UTC
+l,,,,,,
