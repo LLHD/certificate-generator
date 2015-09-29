@@ -1,6 +1,12 @@
 import csv
 from PIL import Image, ImageDraw,ImageFont
 
+# Main image from base.jpg
+im = Image.open('base.jpg').convert('RGBA')
+W, H = im.size
+
+MaxSize = 200
+maxFontW = W * .90
 
 # Open the Local Hack Day CSV
 with open('data.csv', 'rb') as attendance:
@@ -9,16 +15,9 @@ with open('data.csv', 'rb') as attendance:
     
     #Iterate through
     for row in reader:
-
-		# Main image from base.jpg
-		im = Image.open('base.jpg').convert('RGBA')
-		W, H = im.size
-
-		MaxSize = 200
-		maxFontW = W * .90
-
-		nameSize = MaxSize
-        finishSize = MaxSize/2
+	im = Image.open('base.jpg').convert('RGBA')
+	nameSize = MaxSize
+	finishSize = MaxSize/2
 
     	#Grab name and surname
     	first_name = row[0].upper()
@@ -33,27 +32,27 @@ with open('data.csv', 'rb') as attendance:
         draw = ImageDraw.Draw(im)
 
         # Find size of text
-        wnameFont, hnameFont = draw.textsize(nameFontName,font=nameFont)
+        wnameFont, hnameFont = draw.textsize(full_name,font=nameFont)
 
         # Make size smaller until width is less than size of maxFontW
         while (wnameFont > maxFontW):
             nameSize = nameSize - 10
             nameFont = ImageFont.truetype('fonts/Outage.ttf', nameSize)
-            wnameFont, hnameFont = draw.textsize(nameFontName,font=nameFont)
+            wnameFont, hnameFont = draw.textsize(full_name,font=nameFont)
 
-        wcongratsFont, hcongratsFont = draw.textsize(congratsFontDetails,font=congratsFont)
+        wcongratsFont, hcongratsFont = draw.textsize(congrats,font=congratsFont)
 
         while (wcongratsFont > maxFontW):
             finishSize = finishSize - 10
             congratsFont = ImageFont.truetype('fonts/OpenSansRegular.ttf', finishSize)
-            wcongratsFont, hcongratsFont = draw.textsize(congratsFontDetails,font=congratsFont)
+            wcongratsFont, hcongratsFont = draw.textsize(congrats,font=congratsFont)
 
         # Put text onto the image
-        draw.text(((W-wnameFont)/2,(H-hnameFont)/2 + 100), nameFontName,font=nameFont, fill="white")
-        draw.text(((W-wcongratsFont)/2,((H-hcongratsFont)/2)+hnameFont+125), congratsFontDetails,font=congratsFont, fill="white")
+        draw.text(((W-wnameFont)/2,(H-hnameFont)/2 + 100), full_name,font=nameFont, fill="white")
+        draw.text(((W-wcongratsFont)/2,((H-hcongratsFont)/2)+hnameFont+125), congrats,font=congratsFont, fill="white")
 
         # Save out the image
-        filename = 'output/' + nameFontName.strip() + '.png'
+        filename = 'output/' + full_name.strip() + '.png'
         filename = filename.replace (" ", "_")
         print filename
         im.save(filename,'PNG')
