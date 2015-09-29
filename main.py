@@ -1,3 +1,13 @@
+# Script Name       : main.py
+# Author            : Shy Ruparel (Original - Flyers) and Julian Engel (Certificates)
+# Created           : September 29 2015
+
+# Pulls in data from "data.csv" which is a few columns wide
+# Uses a base image as the background
+# Uses the data - first name and second name -
+# and prints onto the base image
+# and saves every image as a .PNG
+
 import csv
 from PIL import Image, ImageDraw,ImageFont
 
