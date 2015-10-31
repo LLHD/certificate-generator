@@ -1,4 +1,4 @@
-This is a system to automatically generate certificates for the Local Hack Day when given a CSV with names of the participiants from the Organizer.
+This is a system to automatically generate certificates for the Local Hack Day 2015 when given a CSV with names of the participiants from the MLH Organizer (organizer.mlh.io)
 
 ### How to:
 Replace the ```data.csv``` with your attendance file. To do so, download the file from the organizer(organizer.mlh.io) and rename it to be called ```data.csv```. Put it into the root directory and run the command as shown below.
